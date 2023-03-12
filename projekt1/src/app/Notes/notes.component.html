@@ -1,0 +1,46 @@
+<div class="notes-header">
+    <h2 class="notes-title">&#9782; Notes</h2>
+    <p class="notes-count">{{notes.length}}</p>
+</div>
+
+<div class='notes' *ngIf="!showAdd">
+
+
+    <a *ngFor="let note of notes" [routerLink]="['/note',note.id]" style="font-size:x-large;">
+        <div class='notes-list-item'>
+            <div style="display: flex; justify-content: space-between;">
+                <div class="notes-list-component">
+                    <h2>{{note.name}}</h2>
+                    <h3>{{ note.text | slice:0:20 }}</h3>
+                </div>
+                <a (click)="OnDelete(note);$event.stopPropagation()" routerLink="/">Delete</a>
+
+            </div>
+        </div>
+    </a>
+
+
+</div>
+
+
+
+
+
+
+<div *ngIf="showAdd">
+
+
+
+    <div class="note">
+        <div class="note-header">
+            <input maxlength='23' type="text" id="name" name="name" placeholder="Name" #name>
+            <button type="button" (click)="setValue(name.value,text.value)">Add</button>
+
+        </div>
+        <textarea maxlength='4990' id="text" name="text" placeholder="text" #text></textarea>
+
+    </div>
+</div>
+<a>
+    <button class='button-with-icon floating-button ' (click)="toggleComponent()"></button>
+</a>

@@ -1,0 +1,21 @@
+<div class="note">
+    <div class="note-header">
+        <h3>
+            <a routerLink="/">
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <path d="M11 16l13-13v-3l-16 16 16 16v-3l-13-13z"></path>
+                </svg>
+
+            </a>
+        </h3>
+        <input maxlength='23' type="text" id="name" name="name" placeholder="Name" value="{{note.name}}"
+            (change)="OnChange(note,name.value,text.value)" #name>
+
+
+    </div>
+    <textarea maxlength='4990' id="text" name="text" placeholder="text" (change)="OnChange(note,name.value,text.value)"
+        #text>{{note.text}}</textarea>
+</div>
