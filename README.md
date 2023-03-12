@@ -1,7 +1,7 @@
-# Notes with Django Rest and React
+# Notes with Angular and Django Rest 
 Made by:
 - Django REST
-- React
+- Angular
 
 Features:
 - add note
@@ -11,11 +11,16 @@ Features:
 
 Notes:
 
-![Snímka obrazovky 2023-01-06 223537](https://user-images.githubusercontent.com/85837671/211118568-62fb5bff-0538-47eb-8085-9383d6be5485.jpg)
+![notes](https://user-images.githubusercontent.com/85837671/224553559-49282d3c-7786-4e92-a16c-ceb0f30cf27f.jpg)
 
 Note:
 
-![Snímka obrazovky 2023-01-06 223751](https://user-images.githubusercontent.com/85837671/211118599-15f9a012-a1a1-4915-b46b-8f0e1b8a7157.jpg)
+![look](https://user-images.githubusercontent.com/85837671/224553635-07daeaf1-27da-442a-a298-9034255a79ae.jpg)
 
-Part of design: https://github.com/divanov11/notes-app
+Add
+
+![add](https://user-images.githubusercontent.com/85837671/224553648-742fbb00-a156-4b3e-8394-86e90b4aecb3.jpg)
+
+
+
 
