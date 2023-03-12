@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Notes</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    @import"https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap";
+
+    :root {
+      --color-main: #f68657;
+      --color-text: #383a3f;
+      --color-dark: #1f2124;
+      --color-gray: #677;
+      --color-bg: #f3f6f9;
+      --color-light: #acb4bd;
+      --color-lighter: #f9f9f9;
+      --color-white: #fff;
+      --color-border: #e0e3e6
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Lexend, sans-serif;
+      color: inherit;
+      font-size: inherit;
+      scroll-behavior: smooth
+    }
+
+    body {
+      line-height: 1.8em;
+      font-weight: 400;
+      font-size: 16px
+    }
+
+    html {
+      background-color: var(--color-bg)
+    }
+  </style>
+  <link rel="stylesheet" href="{% static 'angular/styles.5d090b7ac14334dc.css' %}" media="print"
+    onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="{% static 'angular/styles.5d090b7ac14334dc.css' %}">
+  </noscript>
+</head>
+
+<body>
+  <app-root></app-root>
+  <script src="{% static 'angular/runtime.7fb8eef134946422.js' %} " type="module">
+
+  </script>
+  <script src="{% static 'angular/polyfills.e08d1b1369b6af3f.js' %} " type="module">
+
+  </script>
+  <script src="{% static 'angular/main.7f37b7e4ed113e12.js' %} " type="module"></script>
+
+</body>
+
+</html>
