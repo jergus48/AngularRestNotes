@@ -31,7 +31,7 @@ export class NotesComponent {
     }
 
     GetData() {
-        this.NoteService.getNote().subscribe(data => { this.notes = data })
+        this.NoteService.getNote().subscribe((data: any) => { this.notes = data })
     }
 
     OnDelete(note: any) {
