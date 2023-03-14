@@ -18,7 +18,7 @@ export class NoteLookComponent {
         this.GetData(this.userId)
     }
     GetData(id: any) {
-        this.service.getNote(id).subscribe(data => { this.note = data })
+        this.service.getNote(id).subscribe((data: any) => { this.note = data })
     }
     OnChange(note: any, name: string, text: string) {
         note.name = name
